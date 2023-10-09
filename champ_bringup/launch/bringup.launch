@@ -20,7 +20,6 @@
 
     <group ns="$(arg robot_name)">
         <param name="tf_prefix" value="$(arg robot_name)"/>
-        <param if="$(arg gazebo)" name="use_sim_time" value="true"/>
 
         <!-- ==================== LOAD PARAMETERS ==================== -->
         <include file="$(find champ_description)/launch/description.launch">
